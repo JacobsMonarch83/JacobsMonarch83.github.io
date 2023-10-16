@@ -2,19 +2,6 @@ body {
     background-color: #17161f;
 }
 
-#startBtn {
-    display: inline-block; /* Строчно-блочный элемент */
-    background: #8C959D; /* Серый цвет фона */
-    color: #fff; /* Белый цвет текста */
-    padding: 1rem 1.5rem; /* Поля вокруг текста */
-    text-decoration: none; /* Убираем подчёркивание */
-    border-radius: 3px; /* Скругляем уголки */
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 7em;
-}
-
 #field {
     border: 2px dotted #c7cade5c;
     height: 500px;
@@ -43,6 +30,16 @@ body {
     color: #fdf4f4;
     text-align: center;
 }
+#move {
+    height: 50px;
+    width: 150px;
+    left: 370px;
+    top: 00px;
+    position: relative;
+    color: #e7dfdf;
+    text-align: center;
+}
+
 
 #elem {
     background-color: #cea800;
