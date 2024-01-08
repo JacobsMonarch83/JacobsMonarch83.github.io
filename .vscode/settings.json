@@ -1,5 +1,4 @@
 {
-    "emmet.includeLanguages": {
-        "django-html": "html"
-    }
+    "liveServer.settings.port": 5502,
+    "git.autoRepositoryDetection": false
 }
