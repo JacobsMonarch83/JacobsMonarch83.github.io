@@ -1,0 +1,23 @@
+{% extends 'main/layout.html' %} 
+{% block title %}{{title}}{% endblock %}
+{% block content %}
+<div class="beers">
+  <h1>{{title}}</h1>
+  <div class='info'>
+    Здесь публикуются записи о моих декустациях различных пив.
+  </div>
+
+  {% for el in my_beers %}
+    <div class='new-item'>
+        <h3>{{ el.title }}</h3>
+        <p><span class='property'>Производитель: </span><b>{{ el.brewery }}</b></p>
+        <p><span class='property'>Фото: </span><img class='beer-image' src={{ el.photo.url }} alt="Картинка"/></p>
+        <p><span class='property'>Моя оценка: </span>{{ el.rating }} / 10</p>
+        <p><span class='property'>Комментарий: </span>{{ el.description }}</p>
+        <i>{{ el.date }}</i>
+    </div>
+
+  {% endfor %}
+
+</div>
+{% endblock %}

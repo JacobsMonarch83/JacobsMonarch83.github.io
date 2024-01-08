@@ -1,0 +1,28 @@
+{% extends 'main/layout.html' %} 
+{% block script %}
+{% comment %} <script src="https://api-maps.yandex.ru/v3/?apikey=cb2ac36a-0a2a-4531-8808-9a87fd1e0896&lang=ru_RU"></script>
+ {% endcomment %}
+<script src="https://api-maps.yandex.ru/2.1/?apikey=cb2ac36a-0a2a-4531-8808-9a87fd1e0896&lang=ru_RU" type="text/javascript"></script>
+<script src="static/main/js/contacts_map.js"></script>
+{% endblock %}
+{% block title %}{{title}}{% endblock %}
+{% block content %}
+<div>
+  <h1>{{title}}</h1>
+  <div class="contacts">
+    <div>
+        <h2>Телефон</h2>
+        <a href="tel:88005553535">8 (800) 555-35-35</a>
+    </div>
+    <div>
+        <h2>Адрес</h2>
+        <p>
+          Действительный адрес нашей организации мы вам не скажем, но можете пройти <b>сюда</b>:
+        </p>
+    </div>
+    <div id="contacts-map"></div>
+  </div>
+
+{% comment %}   <a href="{% url 'home' %}"><button class="btn btn-warning">На главную</button></a>
+ {% endcomment %}</div>
+{% endblock %}
